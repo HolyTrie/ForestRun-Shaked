@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 6672089173507000713}
   - component: {fileID: 7241681361560373513}
   - component: {fileID: 1221930460830427601}
-  - component: {fileID: 3032972568692825073}
   - component: {fileID: 6730962869044474765}
+  - component: {fileID: 736147746090093309}
+  - component: {fileID: -4249642889845239863}
   m_Layer: 6
   m_Name: TileGround
   m_TagString: Ground
@@ -114,7 +115,39 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &3032972568692825073
+--- !u!114 &6730962869044474765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7766722326264339329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acc6f67fbb0751a4d92512ea05cbdf12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocity: {x: 0, y: -2, z: 0}
+--- !u!251 &736147746090093309
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7766722326264339329}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
+--- !u!61 &-4249642889845239863
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,7 +177,7 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -159,16 +192,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6730962869044474765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7766722326264339329}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acc6f67fbb0751a4d92512ea05cbdf12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocity: {x: 0, y: -2, z: 0}

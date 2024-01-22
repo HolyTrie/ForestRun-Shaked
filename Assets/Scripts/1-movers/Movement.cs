@@ -22,7 +22,7 @@ public class Movement : MonoBehaviour
     {
         MoveCheck();
         // Move our character
-        controller.Move(5f, jump, move_left, move_right);
+        controller.Move(jump, move_left, move_right);
         //reset
         jump = false;
         move_right = false;

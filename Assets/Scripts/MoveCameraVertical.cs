@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MoveCameraVertical : MonoBehaviour
 {
     public GameObject CameraFollow;
     public Vector3 offset;
-    
+
     private void Update()
     {
         transform.position = new Vector3(CameraFollow.transform.position.x, 0f, CameraFollow.transform.position.z) + offset;

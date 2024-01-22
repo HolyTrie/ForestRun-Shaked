@@ -6,8 +6,6 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private bool m_AirControl = false;                         // Whether or not a player can steer while jumping;
     [SerializeField] private LayerMask m_WhatIsGround;                          // A mask determining what is ground to the character
     [SerializeField] private Transform m_GroundCheck;                           // A position marking where to check if the player is grounded.
-    [SerializeField] private Transform m_CeilingCheck;                          // A position marking where to check for ceilings
-    [SerializeField] private Collider2D m_CrouchDisableCollider;				// A collider that will be disabled when crouching
     [SerializeField] float Speed;
     [SerializeField] Rigidbody2D m_Rigidbody2D;
     //privates//
@@ -36,7 +34,7 @@ public class CharacterController : MonoBehaviour
             }
         }
     }
-    public void Move(float crouch_speed, bool jump, bool move_left, bool move_right)
+    public void Move(bool jump, bool move_left, bool move_right)
     {
         //walking//
         if (move_left)
