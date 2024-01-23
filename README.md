@@ -1,15 +1,11 @@
 # ForestRun-Shaked
 Part of week 3 assignment
-
 This game is a jumper platformer. </br>
 there are tiles falling from the skies and you are requested to reach the top. </br>
 Key Bindings - 
 * Space - Jump
 * W, A - Movement.
-
-
 To try the game on you can see it on [itch.io-ForestRun](https://shaggyx98.itch.io/forestrun)
-
 ## Changes
 I used some of the base code for this project from my previous project - [SpaceShips](https://github.com/HolyTrie/SpaceShips-Shaked/tree/main) </br>
 i'll list the most significant changes made in this project below : </br>
