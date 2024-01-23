@@ -1,5 +1,4 @@
-﻿using UnityEditor.UIElements;
-using UnityEngine;
+﻿using UnityEngine;
 
 /**
  * This component increases a given "score" field whenever it is triggered.
