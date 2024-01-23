@@ -10,7 +10,7 @@ Key Bindings -
 
 To try the game on you can see it on [itch.io-ForestRun](https://shaggyx98.itch.io/forestrun)
 
-# Changes
+## Changes
 I used some of the base code for this project from my previous project - [SpaceShips](https://github.com/HolyTrie/SpaceShips-Shaked/tree/main) </br>
 i'll list the most significant changes made in this project below : </br>
 * I created a character controller with animation in order to controll the player movement [CharacterController](https://github.com/HolyTrie/ForestRun-Shaked/blob/main/Assets/Scripts/1-movers/CharacterController.cs)
